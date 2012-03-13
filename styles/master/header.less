@@ -1,0 +1,66 @@
+header {
+	color: #FFF;
+	background: #222 url(../images/header.png);
+	text-shadow: 0 1px 0 #000;
+	.wrap {
+		position: relative;
+		padding: 60px 0;
+	}
+	h1,
+	h2 {
+		overflow: hidden;
+		background: transparent none 0 0 no-repeat;
+		text-indent: -1000px;
+		width: 300px;
+	}
+	h1 {
+		background-image: url(../images/logo.png);
+		height: 71px;
+	}
+	h2 {
+		background-image: url(../images/names.png);
+		height: 28px;
+		.transition(background-position 0.4s ease-in);
+		&.position-0 {
+			background-position: 0 0;
+		}
+		&.position-1 {
+			background-position: 0 -28px;
+		}
+		&.position-2 {
+			background-position: 0 -56px;
+		}
+		&.position-3 {
+			background-position: 0 -84px;
+		}
+		&.position-4 {
+			background-position: 0 -112px;
+		}
+		&.position-5 {
+			background-position: 0 -140px;
+		}
+		&.position-6 {
+			background-position: 0 -168px;
+		}
+		&.position-7 {
+			background-position: 0 -196px;
+		}
+		&.position-8 {
+			background-position: 0 -224px;
+		}
+	}
+	blockquote {
+		position: absolute;
+		right: 0;
+		bottom: 60px;
+		padding: 15px 22px 17px 20px;
+		background: #5DC4B7;
+		color: #222;
+		text-shadow: none;
+		font-style: italic;
+		font-size: 23px;
+		letter-spacing: -1px;
+		.border-radius(4px);
+		.box-shadow(0 1px 0 #000);
+	}
+}

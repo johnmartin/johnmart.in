@@ -1,0 +1,53 @@
+body {
+	font-family: @fontPrimary;
+	font-size: @fontSize;
+	line-height: 1.4;
+	color: #333;
+	background: #EEE url(../images/bg.png);
+}
+
+h1 {
+	font-family: @fontSecondary;
+	font-size: (@fontSize * 3);
+	font-weight: bold;
+}
+
+h2 {
+	font-family: @fontSecondary;
+	font-size: (@fontSize * 1.5);
+	font-weight: bold;
+}
+
+h3 {
+	font-family: @fontSecondary;
+	font-weight: bold;
+}
+
+a {
+	color: #333;
+	.transition(all .2s linear);
+	&:hover {
+		color: #000;
+		.transition(all .2s linear);
+	}
+}
+
+#content article {
+	margin-top: @base * 6;
+	margin-bottom: @base * 6;
+}
+
+em {
+	font-style: italic;
+}
+
+::selection {
+	background: #FFF;
+	color: #000;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: #FFF;
+	color: #000;
+	text-shadow: none;
+}
