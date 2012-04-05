@@ -1,0 +1,54 @@
+@media screen and (max-width: 500px) {
+  #content {
+    padding: 0 20px 20px 20px;
+    width: inherit;
+  }
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  .grid .row {
+    margin: 0;
+  }
+  .grid .item {
+    width: inherit;
+    height: inherit !important;
+    float: none;
+    margin: 20px 0;
+    background-color: transparent;
+    text-align: center;
+  }
+  .grid .item.text {
+    text-align: left;
+  }
+  .grid .item img {
+    margin: 0;
+  }
+  .grid .item .action {
+    position: inherit;
+    display: inline-block;
+    margin: 10px 0 5px 0;
+  }
+  article {
+    margin: 0 !important;
+    padding: 0;
+    border-bottom: 2px dashed #CCC;
+  }
+  article:last-child {
+    border-bottom-width: 0;
+  }
+  header {
+    padding: 20px;
+  }
+  header .wrap {
+    width: inherit;
+  }
+  header .wrap {
+    padding: 0;
+  }
+  header blockquote {
+    position: inherit;
+    bottom: 0;
+    margin-top: 20px;
+  }
+}
