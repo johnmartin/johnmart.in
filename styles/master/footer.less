@@ -3,32 +3,22 @@ footer {
 	padding: 60px 0;
 	ul {
 		.clearfix;
-		width: 280px;
+		width: 560px;
 		margin: 0 auto;
 		li {
 			float: left;
 			margin: 0 20px;
 			a {
 				display: block;
-				background: #666;
-				width: 100px;
-				height: 100px;
-				overflow: hidden;
-				text-indent: -1000px;
-				.border-radius(100px);
-				.box-shadow(inset 0 6px 12px rgba(0, 0, 0, 0.2));
-				.transition(background-color 0.2s ease-in);
-				&.twitter {
-					background-image: url(../images/twitter.min.png);
-					&:hover {
-						background-color: #019AD2;
-					}
-				}
-				&.linkedin {
-					background-image: url(../images/linkedin.min.png);
-					&:hover {
-						background-color: #007fb1;
-					}
+				margin-top: 10px;
+				color: #666;
+				font-weight: bold !important;
+				font-size: 100px;
+				line-height: 100px;
+				text-shadow: 0 1px 0 #000;
+				&:hover {
+					color: #333;
+					margin-top: 0;
 				}
 			}
 		}

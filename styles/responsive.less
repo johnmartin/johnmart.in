@@ -1,4 +1,30 @@
-@media screen and (max-width:500px) {
+@media screen and (max-width:500px) {	
+	header {
+		padding: 20px;
+		text-align: center;
+		.wrap {
+			width: inherit;
+			padding: 0;
+		}
+		blockquote {
+			position: inherit;
+			bottom: 0;
+			font-size: 18px;
+			margin-top: 20px;
+		}
+	}
+	footer {
+		ul {
+			width: 320px;
+			li {
+				margin: 0 10px;
+				a {
+					font-size: 60px;
+					text-shadow: none;
+				}
+			}
+		}
+	}
 	#content {
 		padding: 0 20px 20px 20px;
 		width: inherit;
@@ -22,7 +48,7 @@
 				text-align: left;
 			}
 			img {
-				margin: 0;
+				margin: 0 auto;
 			}
 			.action {
 				position: inherit;
@@ -32,25 +58,11 @@
 		}
 	}
 	article {
-		margin: 0 !important;
-		padding: 0;
-		border-bottom: 2px dashed #CCC;
+		margin: 40px 0 !important;
+		padding: 0 0 20px 0;
+		border-bottom: 4px dashed #CCC;
 		&:last-child {
 			border-bottom-width: 0;
-		}
-	}
-	header {
-		.wrap {
-			width: inherit;
-		}
-		padding: 20px;
-		.wrap {
-			padding: 0;
-		}
-		blockquote {
-			position: inherit;
-			bottom: 0;
-			margin-top: 20px;
 		}
 	}
 }

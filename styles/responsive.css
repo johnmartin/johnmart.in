@@ -1,4 +1,28 @@
 @media screen and (max-width: 500px) {
+  header {
+    padding: 20px;
+    text-align: center;
+  }
+  header .wrap {
+    width: inherit;
+    padding: 0;
+  }
+  header blockquote {
+    position: inherit;
+    bottom: 0;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  footer ul {
+    width: 320px;
+  }
+  footer ul li {
+    margin: 0 10px;
+  }
+  footer ul li a {
+    font-size: 60px;
+    text-shadow: none;
+  }
   #content {
     padding: 0 20px 20px 20px;
     width: inherit;
@@ -22,7 +46,7 @@
     text-align: left;
   }
   .grid .item img {
-    margin: 0;
+    margin: 0 auto;
   }
   .grid .item .action {
     position: inherit;
@@ -30,25 +54,11 @@
     margin: 10px 0 5px 0;
   }
   article {
-    margin: 0 !important;
-    padding: 0;
-    border-bottom: 2px dashed #CCC;
+    margin: 40px 0 !important;
+    padding: 0 0 20px 0;
+    border-bottom: 4px dashed #CCC;
   }
   article:last-child {
     border-bottom-width: 0;
-  }
-  header {
-    padding: 20px;
-  }
-  header .wrap {
-    width: inherit;
-  }
-  header .wrap {
-    padding: 0;
-  }
-  header blockquote {
-    position: inherit;
-    bottom: 0;
-    margin-top: 20px;
   }
 }
