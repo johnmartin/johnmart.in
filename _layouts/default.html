@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="/dist/styles/master.css" rel="stylesheet">
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  <script src="//use.typekit.net/uxc7gdu.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+
+</head>
+
+<body>
+
+  <header id="header" class="header-{{ page.id }}">
+    <div class="container">
+      <!-- <img src="/dist/images/logo.svg" class="logo" width="200"> -->
+      <h1>John Martin</h1>
+      <p class="availability">Availability: {{ site.availability }}</p>
+      <p>Freelance full stack web designer / developer</p>
+      <ul>
+        <li><a href="/" class="work{% if page.id == 'work' %} active{% endif %}">Work</a></li>
+        <li><a href="/about.html" class="about{% if page.id == 'about' %} active{% endif %}">About</a></li>
+        <li><a href="/contact.html" class="contact{% if page.id == 'contact' %} active{% endif %}">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  {{ content }}
+
+  <style id="header-style"></style>
+  <script src="/dist/scripts/vendor.js"></script>
+  <script src="/dist/scripts/me.js"></script>
+
+</body>
+</html>

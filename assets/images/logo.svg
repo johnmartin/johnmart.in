@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 234 144" enable-background="new 0 0 234 144" xml:space="preserve">
+<g id="black" display="none">
+	<rect display="inline" width="234" height="144"/>
+</g>
+<g id="circles" display="none">
+	<g display="inline">
+		<path fill="#FFFFFF" d="M72,4c37.5,0,68,30.5,68,68s-30.5,68-68,68S4,109.5,4,72S34.5,4,72,4 M72,0C32.2,0,0,32.2,0,72
+			s32.2,72,72,72s72-32.2,72-72S111.8,0,72,0L72,0z"/>
+	</g>
+	<g display="inline">
+		<path fill="#FFFFFF" d="M117,4c37.5,0,68,30.5,68,68s-30.5,68-68,68s-68-30.5-68-68S79.5,4,117,4 M117,0C77.2,0,45,32.2,45,72
+			s32.2,72,72,72s72-32.2,72-72S156.8,0,117,0L117,0z"/>
+	</g>
+	<g display="inline">
+		<path fill="#FFFFFF" d="M162,4c37.5,0,68,30.5,68,68s-30.5,68-68,68s-68-30.5-68-68S124.5,4,162,4 M162,0c-39.8,0-72,32.2-72,72
+			s32.2,72,72,72s72-32.2,72-72S201.8,0,162,0L162,0z"/>
+	</g>
+</g>
+<g id="outline">
+	<path fill="#FFFFFF" d="M72,4c37.5,0,68,30.5,68,68s-30.5,68-68,68S4,109.5,4,72S34.5,4,72,4 M72,0C32.2,0,0,32.2,0,72
+		s32.2,72,72,72s72-32.2,72-72S111.8,0,72,0L72,0z"/>
+	<path fill="#FFFFFF" d="M117,4c37.5,0,68,30.5,68,68s-30.5,68-68,68s-68-30.5-68-68S79.5,4,117,4 M117,0C77.2,0,45,32.2,45,72
+		s32.2,72,72,72s72-32.2,72-72S156.8,0,117,0L117,0z"/>
+	<path fill="#FFFFFF" d="M162,4c37.5,0,68,30.5,68,68s-30.5,68-68,68s-68-30.5-68-68S124.5,4,162,4 M162,0c-39.8,0-72,32.2-72,72
+		s32.2,72,72,72s72-32.2,72-72S201.8,0,162,0L162,0z"/>
+</g>
+</svg>
