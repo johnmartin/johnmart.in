@@ -40,6 +40,9 @@
     var svg = VoronoiSVG();
     $('#header-style').html('#header{background-image: url("data:image/svg+xml;charset=utf-8,'+svg+'")}');
 
+    // Match height
+    $('.grid .item').matchHeight();
+
     // Carousels
     $('.carousel').fotorama({
       fit: 'cover',

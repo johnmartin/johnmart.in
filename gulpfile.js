@@ -14,7 +14,8 @@ var paths = {
     vendor_scripts: [
       './bower_components/jquery/dist/jquery.js',
       './bower_components/fotorama/fotorama.js',
-      './bower_components/voronoi/rhill-voronoi-core.js'
+      './bower_components/voronoi/rhill-voronoi-core.js',
+      './bower_components/matchHeight/jquery.matchHeight.js'
     ],
     vendor_styles: [
       './bower_components/fotorama/fotorama.css',

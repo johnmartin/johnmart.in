@@ -50,7 +50,7 @@ a {
 // Grid
 .grid {
   .clearfix;
-  margin: (0-(@unit/2)) (0-(@unit/2)) 0 (0-(@unit/2));
+  margin: (0-(@unit/2)) (0-(@unit/2)) (@unit/2) (0-(@unit/2));
   .col {
     float: left;
     .item {
@@ -71,9 +71,9 @@ a {
     padding: @unit @unit (@unit*1.33) @unit;
     text-align: center;
     h2 {
-      margin: 0 0 (@unit/4) 0;
+      margin: 0x 0 (@unit/3) 0;
       color: lighten(@text, 5%);
-      font-size: (@font-size*1.5);
+      font-size: (@font-size*1.3);
     }
     .meta {
       line-height: 1.25;
@@ -134,9 +134,9 @@ a {
   &.header-contact {
     background-color: @header-contact-bg;
   }
-  .container {
-    padding-bottom: 0;
-  }
+  // .container {
+  //   padding-bottom: 0;
+  // }
   .logo {
     float: right;
   }
