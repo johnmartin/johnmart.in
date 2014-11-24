@@ -31,14 +31,24 @@
         pt.push([v.x, v.y]);
       }
       polys.push('<polygon opacity=\''+result.cells[x].site.opacity+'\' fill=\'#FFFFFF\' points=\''+pt.join(' ')+'\' />');
-      // polys.push('<polygon opacity=\'0.1\' fill=\'none\' stroke=\'#FFFFFF\' stroke-width=\'2\' stroke-miterlimit=\'10\' points=\''+pt.join(' ')+'\' />');
     }
     return '<svg version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 '+size+' '+size+'\'><g>'+polys.join('')+'</g></svg>';
   }
 
   function Init () {
+    // Header
     var svg = VoronoiSVG();
     $('#header-style').html('#header{background-image: url("data:image/svg+xml;charset=utf-8,'+svg+'")}');
+
+    // Carousels
+    $('.carousel').fotorama({
+      fit: 'cover',
+      width: '100%',
+      height: 500,
+      autoplay: 4000,
+      nav: false,
+      arrows: false
+    });
   }
 
   $(Init);

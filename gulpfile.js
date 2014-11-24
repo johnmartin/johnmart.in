@@ -17,7 +17,18 @@ var paths = {
       './bower_components/voronoi/rhill-voronoi-core.js'
     ],
     vendor_styles: [
-      './bower_components/fotorama/fotorama.css'
+      './bower_components/fotorama/fotorama.css',
+      './bower_components/monosocialiconsfont/monosocialiconsfont.css'
+    ],
+    vendor_fonts_css: [
+      './bower_components/monosocialiconsfont/monosocialiconsfont.css'
+    ],
+    vendor_fonts_font: [
+      './bower_components/monosocialiconsfont/*.eot',
+      './bower_components/monosocialiconsfont/*.otf',
+      './bower_components/monosocialiconsfont/*.svg',
+      './bower_components/monosocialiconsfont/*.ttf',
+      './bower_components/monosocialiconsfont/*.woff'
     ]
   },
   dest: {
@@ -25,7 +36,8 @@ var paths = {
     scripts: './dist/scripts/',
     images: './dist/images/',
     vendor_scripts: './dist/scripts/',
-    vendor_styles: './dist/styles/'
+    vendor_styles: './dist/styles/',
+    vendor_fonts: './dist/fonts/'
   }
 };
 
@@ -61,7 +73,15 @@ gulp.task('vendor_styles', function() {
     .pipe(gulp.dest(paths.dest.vendor_styles));
 });
 
-gulp.task('default', ['scripts', 'less', 'images', 'vendor_scripts', 'vendor_styles']);
+gulp.task('vendor_fonts', function() {
+  gulp.src(paths.src.vendor_fonts_css)
+    .pipe(concat('fonts.css'))
+    .pipe(gulp.dest(paths.dest.vendor_fonts));
+  return gulp.src(paths.src.vendor_fonts_font)
+    .pipe(gulp.dest(paths.dest.vendor_fonts));
+});
+
+gulp.task('default', ['scripts', 'less', 'images', 'vendor_scripts', 'vendor_styles', 'vendor_styles', 'vendor_fonts']);
 
 gulp.task('watch', function () {
   gulp.watch(paths.src.scripts, ['scripts']);
