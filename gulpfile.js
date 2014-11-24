@@ -11,16 +11,21 @@ var paths = {
     less: './assets/less/*.less',
     scripts: './assets/scripts/*.js',
     images: './assets/images/**/*',
-    vendor: [
+    vendor_scripts: [
       './bower_components/jquery/dist/jquery.js',
+      './bower_components/fotorama/fotorama.js',
       './bower_components/voronoi/rhill-voronoi-core.js'
+    ],
+    vendor_styles: [
+      './bower_components/fotorama/fotorama.css'
     ]
   },
   dest: {
     less: './dist/styles/',
     scripts: './dist/scripts/',
     images: './dist/images/',
-    vendor: './dist/scripts/'
+    vendor_scripts: './dist/scripts/',
+    vendor_styles: './dist/styles/'
   }
 };
 
@@ -43,14 +48,20 @@ gulp.task('images', function() {
     .pipe(gulp.dest(paths.dest.images));
 });
 
-gulp.task('vendor', function() {
-  return gulp.src(paths.src.vendor)
+gulp.task('vendor_scripts', function() {
+  return gulp.src(paths.src.vendor_scripts)
     .pipe(uglify())
     .pipe(concat('vendor.js'))
-    .pipe(gulp.dest(paths.dest.vendor));
+    .pipe(gulp.dest(paths.dest.vendor_scripts));
 });
 
-gulp.task('default', ['scripts', 'less', 'images', 'vendor']);
+gulp.task('vendor_styles', function() {
+  return gulp.src(paths.src.vendor_styles)
+    .pipe(concat('vendor.css'))
+    .pipe(gulp.dest(paths.dest.vendor_styles));
+});
+
+gulp.task('default', ['scripts', 'less', 'images', 'vendor_scripts', 'vendor_styles']);
 
 gulp.task('watch', function () {
   gulp.watch(paths.src.scripts, ['scripts']);
