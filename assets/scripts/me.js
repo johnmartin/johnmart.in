@@ -34,23 +34,6 @@
     return '<svg version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 '+header_width+' '+header_height+'\'><g>'+polys.join('')+'</g></svg>';
   }
 
-  function VoronoiSVGTick () {
-    // Move all the dots...
-    for (var i = 0; i < total_cells; i++) {
-      if (((Math.random()*2) > 1)) {
-        sites[i].x += (-1+(Math.random()*2));
-      }
-      if (((Math.random()*2) > 1)) {
-        sites[i].y += (-1+(Math.random()*2));
-      }
-    }
-    // Header image
-    var svg = VoronoiSVG();
-    $('#header-style').html('#header{background-image: url("data:image/svg+xml;charset=utf-8,'+svg+'")}');
-    //
-    setTimeout(VoronoiSVGTick, 100);
-  }
-
   function WindowScroll () {
     if ($(document).scrollTop() < 186) {
       $('body').removeClass('stick-header');
@@ -60,8 +43,9 @@
   }
 
   function Init (page) {
-    // Header Image
-    VoronoiSVGTick();
+    // Header image
+    var svg = VoronoiSVG();
+    $('#header-style').html('#header{background-image: url("data:image/svg+xml;charset=utf-8,'+svg+'")}');
 
     // Make the top nav sticky
     $(window).scroll(WindowScroll);
