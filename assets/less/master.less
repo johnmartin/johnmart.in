@@ -117,6 +117,7 @@ form {
 table {
   width: 100%;
   th {
+    width: 1%;
     font-weight: 500;
     color: mix(@text, @bg, 70%);
     text-align: left;
@@ -125,11 +126,11 @@ table {
     vertical-align: top;
   }
   td {
+    width: 99%;
     vertical-align: top;
   }
 }
 
-// Grid
 .grid {
   .clearfix;
   margin: (0-(@unit/2)) (0-(@unit/2)) (@unit/2) (0-(@unit/2));
@@ -204,7 +205,7 @@ table {
 
 #header {
   color: @header-text;
-  background: transparent none 50% 50% no-repeat;
+  background: transparent none 50% 100% no-repeat;
   background-size: cover;
   &.header-work {
     background-color: @header-work-bg;

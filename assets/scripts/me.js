@@ -52,6 +52,10 @@
     $(window).scroll(WindowScroll);
     WindowScroll();
 
+    // Favicon
+    $('<link rel="shortcut icon" href="/dist/images/favicon-'+page+'.ico">')
+      .appendTo('head');
+
     if (page == 'work') {
       // Match height
       $('.grid .item').matchHeight();
