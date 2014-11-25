@@ -151,7 +151,7 @@ table {
   margin-bottom: @unit;
   background-color: lighten(@bg, 5%);
   .context {
-    padding: @unit @unit (@unit*1.33) @unit;
+    padding: @unit @unit (@unit*3) @unit;
     text-align: center;
     h2 {
       margin: 0 0 (@unit/1.5) 0;
@@ -177,7 +177,10 @@ table {
       margin: (@unit/2) (@unit*2) @unit (@unit*2);
     }
     .actions {
-      margin-bottom: 0;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: @unit;
     }
     .images {
       margin: (@unit/2) (0-@unit);
@@ -301,8 +304,9 @@ table {
   }
   .grid .item {
     .context {
-      padding: (@unit/2);
-      padding-bottom: @unit;
+      padding-top: (@unit/2);
+      padding-left: (@unit/2);
+      padding-right: (@unit/2);
       h2 {
         font-size: (@font-size*1.2);
       }
@@ -399,7 +403,9 @@ table {
     padding: 0;
     .context {
       position: relative;
-      padding: @unit;
+      padding-top: @unit;
+      padding-left: @unit;
+      padding-right: @unit;
       width: auto;
     }
   }
