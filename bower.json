@@ -8,7 +8,6 @@
     "voronoi": "https://github.com/gorhill/Javascript-Voronoi/archive/master.zip",
     "fotorama": "https://github.com/artpolikarpov/fotorama/releases/download/4.6.2/fotorama-4.6.2.zip",
     "monosocialiconsfont": "master",
-    "matchHeight": "0.5.*",
-    "animate.css": "3.2.*"
+    "matchHeight": "0.5.*"
   }
 }
