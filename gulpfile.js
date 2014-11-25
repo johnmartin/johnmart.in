@@ -88,9 +88,8 @@ gulp.task('clean', function () {
   del('./dist');
 });
 
-gulp.task('build', ['clean', 'scripts', 'less', 'images', 'vendor_scripts', 'vendor_styles', 'vendor_styles', 'vendor_fonts']);
-
 gulp.task('default', ['scripts', 'less', 'images', 'vendor_scripts', 'vendor_styles', 'vendor_styles', 'vendor_fonts']);
+gulp.task('build', ['clean', 'default']);
 
 gulp.task('watch', function () {
   gulp.watch(paths.src.scripts, ['scripts']);
