@@ -35,10 +35,23 @@
     return '<svg version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 '+size+' '+size+'\'><g>'+polys.join('')+'</g></svg>';
   }
 
+  function WindowScroll () {
+    if ($(document).scrollTop() < 186) {
+      $('body').removeClass('stick-header');
+    } else {
+      $('body').addClass('stick-header');
+    }
+  }
+
   function Init (page) {
     // Header
     var svg = VoronoiSVG();
     $('#header-style').html('#header{background-image: url("data:image/svg+xml;charset=utf-8,'+svg+'")}');
+
+    // Make the top nav sticky
+    $(window).scroll(WindowScroll);
+    WindowScroll();
+
     if (page == 'work') {
       // Match height
       $('.grid .item').matchHeight();

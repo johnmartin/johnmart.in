@@ -120,6 +120,12 @@ table {
     font-weight: 500;
     color: mix(@text, @bg, 70%);
     text-align: left;
+    white-space: nowrap;
+    padding-right: (@unit/2);
+    vertical-align: top;
+  }
+  td {
+    vertical-align: top;
   }
 }
 
@@ -262,6 +268,32 @@ table {
   }
 }
 
+@media screen and (min-width: @breakpoint-tablet) {
+  .stick-header {
+    margin-top: 253px;
+    #header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      height: 66px;
+      .container {
+        padding-top: 0;
+      }
+      h1,
+      p {
+        display: none;
+      }
+      .logo {
+        width: 75px;
+        height: 46px;
+        margin: (@unit/4);
+      }
+    }
+  }
+}
+
 @media screen and (max-width: @breakpoint-1) {
   .container {
     width: @breakpoint-2 - (@unit*2);
@@ -296,6 +328,11 @@ table {
   }
   .grid.grid-3 .col {
     width: 50%;
+  }
+  .me {
+    width: 170px;
+    height: 170px;
+    margin: 0 0 (@unit/2) (@unit/2);
   }
 }
 
@@ -364,6 +401,11 @@ table {
       padding: @unit;
       width: auto;
     }
+  }
+  .me {
+    width: 100px;
+    height: 100px;
+    margin: 0 0 (@unit/2);
   }
 }
 
