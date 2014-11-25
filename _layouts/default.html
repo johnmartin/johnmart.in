@@ -19,15 +19,19 @@
 
   <header id="header" class="header-{{ page.id }}">
     <div class="container">
-      <img src="/dist/images/logo.svg" class="logo" width="200">
+      <img src="/dist/images/logo.svg" class="logo" width="200" alt="Logo: three concentric white circles overlapping on a transparent background">
       <h1>John Martin</h1>
       <p class="availability">Availability: {{ site.availability }}</p>
       <p>Freelance full stack web designer / developer</p>
-      <!-- <ul>
-        <li><a href="/" class="work{% if page.id == 'work' %} active{% endif %}">Work</a></li>
-        <li><a href="/about.html" class="about{% if page.id == 'about' %} active{% endif %}">About</a></li>
-        <li><a href="/contact.html" class="contact{% if page.id == 'contact' %} active{% endif %}">Contact</a></li>
-      </ul> -->
+      <ul>
+        {% for nav in site.nav %}
+          <li>
+            <a href="{{ nav.url }}" class="{{ nav.id }}{% if page.id == nav.id %} active{% endif %}">
+              {{ nav.label }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
     </div>
   </header>
 
@@ -35,7 +39,6 @@
 
   <footer id="footer">
     <p>
-      <a href="mailto:me@johnmart.in" class="symbol">&#xe224;</a>
       <a href="http://dribbble.com/johnmartin" target="_blank" class="symbol">&#xe221;</a>
       <a href="http://github.com/johnmartin" target="_blank" class="symbol">&#xe236;</a>
       <a href="http://twitter.com/johnmartin" target="_blank" class="symbol">&#xe286;</a>
@@ -47,6 +50,7 @@
   <style id="header-style"></style>
   <script src="/dist/scripts/vendor.js"></script>
   <script src="/dist/scripts/me.js"></script>
+  <script>$(function(){init('{{ page.id }}')})</script>
 
 </body>
 </html>

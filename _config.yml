@@ -1,4 +1,9 @@
-title: John Martin &middot; Full stack web developer / designer
 exclude: [ bower_components, node_modules, assets, gulpfile.js, bower.json, package.json, README.md ]
 
+title: John Martin &middot; Full stack web developer / designer
 availability: Taking on new work from December
+nav: [
+  {url: /, id: work, label: Work },
+  {url: /about.html, id: about, label: About },
+  {url: /contact.html, id: contact, label: Contact }
+]

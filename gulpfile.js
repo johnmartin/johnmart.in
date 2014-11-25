@@ -18,6 +18,7 @@ var paths = {
       './bower_components/matchHeight/jquery.matchHeight.js'
     ],
     vendor_styles: [
+      './bower_components/animate.css/animate.css',
       './bower_components/fotorama/fotorama.css',
       './bower_components/monosocialiconsfont/monosocialiconsfont.css'
     ],

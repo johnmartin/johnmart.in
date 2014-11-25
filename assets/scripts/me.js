@@ -1,4 +1,4 @@
-!function ($, Voronoi) {
+!function (window, $, Voronoi) {
 
   var sites = [];
   var size = 800;
@@ -35,25 +35,25 @@
     return '<svg version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 '+size+' '+size+'\'><g>'+polys.join('')+'</g></svg>';
   }
 
-  function Init () {
+  function Init (page) {
     // Header
     var svg = VoronoiSVG();
     $('#header-style').html('#header{background-image: url("data:image/svg+xml;charset=utf-8,'+svg+'")}');
-
-    // Match height
-    $('.grid .item').matchHeight();
-
-    // Carousels
-    $('.carousel').fotorama({
-      fit: 'cover',
-      width: '100%',
-      height: 500,
-      autoplay: 4000,
-      nav: false,
-      arrows: false
-    });
+    if (page == 'work') {
+      // Match height
+      $('.grid .item').matchHeight();
+      // Carousels
+      $('.carousel').fotorama({
+        fit: 'cover',
+        width: '100%',
+        height: 500,
+        autoplay: 4000,
+        nav: false,
+        arrows: false
+      });
+    }
   }
 
-  $(Init);
+  window.init = Init;
 
-}(window.jQuery, window.Voronoi);
+}(window, window.jQuery, window.Voronoi);
