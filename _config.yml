@@ -1,7 +1,7 @@
 exclude: [ bower_components, node_modules, assets, gulpfile.js, bower.json, package.json, README.md ]
 
 title: John Martin &middot; Full stack web developer / designer
-availability: Taking on new work from late April
+availability: Taking on new work from late May
 nav: [
   {url: /, id: work, label: Work },
   {url: /about.html, id: about, label: About },
