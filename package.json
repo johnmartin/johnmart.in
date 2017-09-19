@@ -2,5 +2,15 @@
   "name": "johnmart.in",
   "version": "0.0.1",
   "private": true,
-  "dependencies": {}
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "d3": "4.10.2",
+    "next": "3.2.2",
+    "react": "15.6.1",
+    "react-dom": "15.6.1"
+  }
 }
