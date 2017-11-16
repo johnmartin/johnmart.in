@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "deploy": "next build && next export -o docs && git checkout -- docs/CNAME docs/.nojekyll"
   },
   "dependencies": {
     "d3": "4.11.0",
