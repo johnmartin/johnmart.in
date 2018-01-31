@@ -9,9 +9,9 @@
     "deploy": "next build && next export -o docs && git checkout -- docs/CNAME docs/.nojekyll"
   },
   "dependencies": {
-    "d3": "4.11.0",
-    "next": "4.1.4",
-    "react": "16.1.1",
-    "react-dom": "16.1.1"
+    "d3": "4.13.0",
+    "next": "4.2.3",
+    "react": "16.2.0",
+    "react-dom": "16.2.0"
   }
 }
